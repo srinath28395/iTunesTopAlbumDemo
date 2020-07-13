@@ -2,7 +2,7 @@
 //  AlbumDetailViewController.swift
 //  TopAlbums
 //
-//  Created by Chanappa on 21/10/19.
+//  Created by Shreenath on 05/07/20.
 //
 
 import UIKit
@@ -110,7 +110,7 @@ private extension AlbumDetailViewController {
             let releaseDate = data.releaseDate,
             let copyright = data.copyright
         else {return}
-        largeAlbumArtwork.loadImage(withImageURL: strURL, #imageLiteral(resourceName: "placeHolderImage"))
+        largeAlbumArtwork.loadImage(withImageURL: strURL)
         albumTitleLabel.text = albumTitle
         artistNameLabel.text = artistName
         genereDetailTitleLabel.text = generes.map({ (genere) -> String in

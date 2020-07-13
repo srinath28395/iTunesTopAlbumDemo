@@ -2,14 +2,12 @@
 //  TopAlbumCell.swift
 //  TopAlbums
 //
-//  Created by Chanappa on 21/10/19.
+//  Created by Shreenath on 05/07/20.
 //
 
 import UIKit
 
 class TopAlbumCell: UITableViewCell {
-
-    private let placeHolderImage = UIImage(systemName: "photo.on.rectangle")
     private let imageSize:CGFloat = 50
     
     lazy var containerView: UIView = {
@@ -103,7 +101,7 @@ class TopAlbumCell: UITableViewCell {
             else {
                 return
             }
-            albumArtImageView.loadImage(withImageURL: albumArtwork, placeHolderImage ?? UIImage())
+            albumArtImageView.loadImage(withImageURL: albumArtwork)
             albumTitleLabel.text = albumTitle
             artistNameLabel.text = artistName
         }

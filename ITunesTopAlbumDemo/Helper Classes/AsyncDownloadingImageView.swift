@@ -2,7 +2,7 @@
 //  AsyncDownloadingImageView.swift
 //  TopAlbums
 //
-//  Created by Chanappa on 21/10/19.
+//  Created by Shreenath on 05/07/20.
 //
 
 import UIKit
@@ -10,10 +10,10 @@ import UIKit
 let imageCacheManager = NSCache<AnyObject, AnyObject>()
 
 class AsyncDownloadingImageView: UIImageView {
-    
+    static let placeholderImage = UIImage(systemName: "photo.on.rectangle")
     private var imageURL: String?
     
-    func loadImage(withImageURL imgURL: String,_ placeholderImage: UIImage) {
+    func loadImage(withImageURL imgURL: String,_ placeholderImage: UIImage = placeholderImage ?? UIImage()) {
         //self.image = nil
         imageURL = imgURL
         checkImageStatus(withImageURL: imgURL, andPlaceHolderImage: placeholderImage)

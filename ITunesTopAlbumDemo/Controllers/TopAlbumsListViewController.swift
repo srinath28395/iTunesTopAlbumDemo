@@ -2,7 +2,7 @@
 //  TopAlbumsListViewController.swift
 //  TopAlbums
 //
-//  Created by Chanappa on 21/10/19.
+//  Created by Shreenath on 05/07/20.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 class TopAlbumsListViewController: UITableViewController {
 
     lazy var activityIndicator: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView(style: .gray)
+        let activity = UIActivityIndicatorView(style: .medium)
         activity.translatesAutoresizingMaskIntoConstraints = false
         return activity
     }()

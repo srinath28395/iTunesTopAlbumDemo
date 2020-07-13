@@ -2,7 +2,7 @@
 //  CommonExtensions.swift
 //  TopAlbums
 //
-//  Created by Chanappa on 21/10/19.
+//  Created by Shreenath on 05/07/20.
 //
 
 import Foundation
@@ -21,7 +21,7 @@ extension Bundle {
 }
 
 extension UIApplication {
-    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    class func topViewController(controller: UIViewController? = UIApplication.shared.windows.last?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(controller: navigationController.visibleViewController)
         }
